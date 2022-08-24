@@ -1,0 +1,87 @@
+body {
+  background-color: #dad7cd;
+  height: 100vh;
+  font-family: "Amiri", serif;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#contactME {
+  background-color: #344e41;
+  width: 80%;
+  text-align: center;
+  margin: 100px;
+  padding: 50px;
+  border-top: 15px solid #588157;
+}
+
+h1 {
+  margin-bottom: 25px;
+  margin-top: 0;
+  font-size: 60px;
+  color: #dad7cd;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+form {
+  padding: 50px;
+  width: 60%;
+  margin: auto;
+}
+
+.field {
+  margin-bottom: 25px;
+  width: 100%;
+  display: grid;
+  position: relative;
+}
+
+label {
+  color: #344e41;
+  height: 50px;
+  font-size: xx-large;
+  letter-spacing: 2px;
+  width: 700px;
+  font-weight: bolder;
+  position: absolute;
+  background-color: #dad7cd;
+  text-transform: uppercase;
+}
+
+.field:hover label {
+  width: 18%;
+  background: #588157;
+  color: #dad7cd;
+  transition: all 0.5s ease-in-out;
+}
+.input {
+  height: 50px;
+  outline: none;
+  border: none;
+  width: 700px;
+  text-transform: uppercase;
+  padding: 0;
+  padding-left: 20%;
+  box-sizing: border-box;
+}
+
+#farah {
+  height: 50px;
+  width: 150px;
+  margin-top: 20px;
+  border-radius: 2px;
+  border: none;
+  background-color: #dad7cd;
+  font-size: large;
+  color: #344e41;
+  font-weight: bolder;
+  font-family: "Amiri", serif;
+  text-transform: uppercase;
+  margin-left: 2em;
+}
+#farah:hover {
+  background-color: #588157;
+  color: #dad7cd;
+  transition: 0.3s;
+}

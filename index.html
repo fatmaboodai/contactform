@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Amiri&family=BIZ+UDMincho&family=Cairo:wght@300&family=Josefin+Sans:wght@200&family=Open+Sans:wght@300&family=Rakkas&family=Ramaraja&family=Righteous&family=Sansita+Swashed&display=swap");
+    </style>
+<script src="./script.js"></script>
+  </head>
+  <body >
+    <section id="contactME">
+      <h1>Contact Me</h1>
+
+      <form
+        action="https://formsubmit.co/fatmaboodai06@gmail.com"
+        method="POST"
+        class="container"
+      >
+        <div class="field name-box">
+          <input
+            type="text"
+            name="Name"
+            id="name"
+            class="input"
+            placeholder="Who Are You?"
+            required
+          />
+          <label for="name">Name</label>
+        </div>
+
+        <div class="field email-box">
+         
+          <input
+            type="text"
+            id="email"
+            name="email"
+            class="input"
+            placeholder="name@email.com"
+            required
+          />
+          <label for="email">Email</label>
+        </div>
+
+        <div class="field msg-box">
+          <input
+          type="text"
+          id="message"
+           name="msg"
+          class="input"
+            placeholder="Your message goes here..."
+          ></input>
+          <label for="msg">Msg</label>
+        </div>
+
+        <input id="farah" class="button" type="submit" value="Send" />
+
+      </form>
+    </section>
+    <button onclick="dark()">click me</button>
+
+  </body>
+</html>
