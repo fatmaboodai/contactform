@@ -10,6 +10,15 @@
    rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
  >
+     <!-- link for the AOS library -->
+     <link  href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" >
+
+     <!-- link for the hover.css library -->
+     <link
+     
+       href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+       rel="stylesheet"
+     />
    <!-- link for the google font -->
  <style>
   @import url("https://fonts.googleapis.com/css2?family=Amiri&family=BIZ+UDMincho&family=Cairo:wght@300&family=Josefin+Sans:wght@200&family=Open+Sans:wght@300&family=Rakkas&family=Ramaraja&family=Righteous&family=Sansita+Swashed&display=swap");
@@ -18,6 +27,14 @@
   </head>
   <body > 
 
+  <!-- code for the AOS library  -->
+  <div class="products">
+    <div class="cardz" data-aos="fade-right">fade right</div>
+    <div class="cardz" data-aos="fade-up">fade up</div>
+    <div class="cardz" data-aos="flip-up">flip up</div>
+    <div class="cardz" data-aos="zoom-in-down">zoom in down</div>
+    <div class="cardz" data-aos="zoom-out-up">zoom out up</div>
+  </div>
 
     <div class="p">
       <i  class="bi bi-brightness-high-fill" id="toggleDark" onclick="DarkMode()"></i>
@@ -69,7 +86,30 @@
         <input id="outhman"  type="submit" value="Send" class="button hvr-bounce-out" />
       </form>
     </section>
+    <!-- link the javascript page -->
     <script src="./script.js" ></script>
+    <!-- link the javascript of sweetalert2 library -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <!-- link the javascript of AOS library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- code of the sweetalert button  -->
+    <script>
+      document.getElementById("outhman").addEventListener("click", function () {
+        Swal.fire({
+          text: "Come back soon",
+          title: "Thank u 4 ur feedback",
+          showConfirmButton: true,
+          confirmButtonColor: "#344e41",
+          color: "#53c78d",
+          imageUrl:
+            "https://i.pinimg.com/originals/10/14/fd/1014fdd78a67c7649ea06bd305539b5e.gif",
+          imageWidth: 400,
+          imageHeight: 200,
+        });
+      });
+      // linking the AOS fucntion
+      AOS.init();
+    </script>
   </body>
   
 
