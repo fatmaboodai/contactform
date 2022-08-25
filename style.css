@@ -65,7 +65,7 @@ label {
   transition: all 0.5s ease-in-out;
 }
 
-#button {
+#outhman {
   height: 50px;
   width: 150px;
   margin-top: 20px;
@@ -79,7 +79,7 @@ label {
   text-transform: uppercase;
   margin-left: 2em;
 }
-#button:hover {
+#outhman:hover {
   background-color: #588157;
   color: #dad7cd;
   transition: 0.3s;

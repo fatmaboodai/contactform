@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- link for the AOS library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- link for the hover.css library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- code for the AOS library  -->
+    <div class="products">
+      <div class="cardz" data-aos="fade-right">fade right</div>
+      <div class="cardz" data-aos="fade-up">fade up</div>
+      <div class="cardz" data-aos="flip-up">flip up</div>
+      <div class="cardz" data-aos="zoom-in-down">zoom in down</div>
+      <div class="cardz" data-aos="zoom-out-up">zoom out up</div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      document.getElementById("farah").addEventListener("click", function () {
+        Swal.fire({
+          text: "Come back soon",
+          title: "Thank u 4 ur feedback",
+          showConfirmButton: true,
+          confirmButtonColor: "#344e41",
+          color: "#53c78d",
+          imageUrl:
+            "https://i.pinimg.com/originals/10/14/fd/1014fdd78a67c7649ea06bd305539b5e.gif",
+          imageWidth: 400,
+          imageHeight: 200,
+        });
+      });
+      AOS.init();
+    </script>
+  </body>
+</html>
