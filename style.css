@@ -48,13 +48,6 @@ label {
   background-color: #dad7cd;
   text-transform: uppercase;
 }
-
-.field:hover label {
-  width: 18%;
-  background: #588157;
-  color: #dad7cd;
-  transition: all 0.5s ease-in-out;
-}
 .input {
   height: 50px;
   outline: none;
@@ -65,8 +58,14 @@ label {
   padding-left: 20%;
   box-sizing: border-box;
 }
+.field:hover label {
+  width: 18%;
+  background: #588157;
+  color: #dad7cd;
+  transition: all 0.5s ease-in-out;
+}
 
-#farah {
+#button {
   height: 50px;
   width: 150px;
   margin-top: 20px;
@@ -80,8 +79,16 @@ label {
   text-transform: uppercase;
   margin-left: 2em;
 }
-#farah:hover {
+#button:hover {
   background-color: #588157;
   color: #dad7cd;
   transition: 0.3s;
+}
+.p {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-size: xx-large;
+  cursor: pointer;
+  color: #1d2e28;
 }
