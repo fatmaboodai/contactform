@@ -92,3 +92,23 @@ label {
   cursor: pointer;
   color: #1d2e28;
 }
+/*  css  of the libraries section  */
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+.cardz {
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  color: beige;
+  background-color: #344e41;
+  border-radius: 20%;
+  margin: 200px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}

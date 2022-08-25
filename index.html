@@ -5,20 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Contact</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Amiri&family=BIZ+UDMincho&family=Cairo:wght@300&family=Josefin+Sans:wght@200&family=Open+Sans:wght@300&family=Rakkas&family=Ramaraja&family=Righteous&family=Sansita+Swashed&display=swap");
-    </style>
+
+     <!-- link for the AOS library -->
+     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+
+ <!-- link for the hover.css library -->
+  
+    <!-- link for the bootstrap  -->
    <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
- />
+ >
+   <!-- link for the google font -->
+
+ <link rel="stylesheet" href="style.css" >
+ <style>
+  @import url("https://fonts.googleapis.com/css2?family=Amiri&family=BIZ+UDMincho&family=Cairo:wght@300&family=Josefin+Sans:wght@200&family=Open+Sans:wght@300&family=Rakkas&family=Ramaraja&family=Righteous&family=Sansita+Swashed&display=swap");
+</style>
   </head>
-  <body >
+  <body > 
+    <!-- code for the AOS library  -->
+    <div class="products">
+      <div class="cardz" data-aos="fade-right">
+fade right 
+      </div>
+      <div class="cardz" data-aos="fade-up">
+fade up
+      </div>
+      <div class="cardz" data-aos="flip-up">
+flip up
+      </div>
+      <div class="cardz" data-aos="zoom-in-down">
+zoom in down 
+      </div>
+      <div class="cardz" data-aos="zoom-out-up">
+zoom out up 
+      </div>
+    </div>
+
     <div class="p">
       <i  class="bi bi-brightness-high-fill" id="toggleDark" onclick="DarkMode()"></i>
     </div>
-    <section id="contactME">
+    <section id="contactME" data-aos="fade-left" >
       <h1>Contact Me</h1>
 
       <form
@@ -62,10 +90,27 @@
           <label  class="test" for="msg">Msg</label>
         </div>
 
-        <input id="button"  type="submit" value="Send" />
-
+        <input id="button"  type="submit" value="Send" class="button hvr-bounce-out" />
       </form>
     </section>
     <script src="./script.js" ></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      document.getElementById("farah").addEventListener("click", function(){
+        Swal.fire({
+      text: "Come back soon",
+      title: 'Thank u 4 ur feedback',
+     showConfirmButton: true,
+     confirmButtonColor: "#344e41",
+     color: "#53c78d",
+     imageUrl: 'https://i.pinimg.com/originals/10/14/fd/1014fdd78a67c7649ea06bd305539b5e.gif',
+     imageWidth: 400,
+    imageHeight: 200,
+})
+      })
+      AOS.init();
+    </script> -->
   </body>
+  
+
 </html>
